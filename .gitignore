@@ -1,5 +1,5 @@
 /.venv/
 /.idea/
 /.git/
-.venv
-.idea
+.venv/
+.idea/
