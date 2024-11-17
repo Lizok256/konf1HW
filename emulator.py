@@ -71,6 +71,7 @@ class Emulator:
             command = input(f"{self.hostname}:{os.getcwd()} $ " )
             if command.strip().lower() == 'exit':
                 break
+            # comment add
             if command.strip().lower() != '':
                 #self.lll.log_command(command.strip().lower() )
                 self.execute_command(command.strip())
