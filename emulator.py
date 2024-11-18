@@ -92,8 +92,9 @@ class Emulator:
 
 
     def execute_command(self, command):
-        self.command_handler.handle(command)
+        ret= self.command_handler.handle(command)
         self.log_action(command)
+        return ret
 
 if __name__ == "__main__":
     emulator = Emulator('config.ini')
