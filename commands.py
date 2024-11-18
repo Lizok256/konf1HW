@@ -7,9 +7,9 @@ class CommandHandler:
     def handle(self, command):
         cmd_parts = command.split()
         cmd = cmd_parts[0]
-
+        ret = 0
         if cmd == 'ls':
-            self.ls()
+            return (self.ls( cmd_parts[1] if len(cmd_parts) > 1 else '.'))
 
         if cmd == 'cd':
             self.cd(cmd_parts[1] if len(cmd_parts) > 1 else '.' )
@@ -22,19 +22,24 @@ class CommandHandler:
                 self.rmdir(cmd_parts[1])
 
         if cmd == 'du':
-            self.du(cmd_parts[1] if len(cmd_parts) > 1 else '.')
+            ret = self.du(cmd_parts[1] if len(cmd_parts) > 1 else '.')
 
         if cmd == 'clear':
             os.system('clear')  # или 'cls' для Windows
 
         if cmd =='':
             return
+        return ret
 
-    def ls(self):
+
+    def ls(self, path):
         # Выводим список файлов в текущей директории
-        files = os.listdir('.')
+        ret =[]
+        files = os.listdir(path)
         for f in files:
             print(f)
+            ret.append(f)
+        return ret
 
     def cd(self, path):
         # Меняем директорию
@@ -42,6 +47,7 @@ class CommandHandler:
             os.chdir(path)
         except FileNotFoundError:
             print(f"No such file or directory: {path}")
+        return path
 
     def rmdir(self, dirname):
         # Удаляет директорию
@@ -59,3 +65,4 @@ class CommandHandler:
                 fp = os.path.join(dirpath, filename)
                 total_size += os.path.getsize(fp)
         print(f"Size of '{path}': {total_size} bytes")
+        return total_size
