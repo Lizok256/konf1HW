@@ -36,11 +36,11 @@ tar. Эмулятор должен работать в режиме CLI.
 
 Запуск emulator.py:
 
-'python3 emulator.py'
+`python3 emulator.py`
 
 Запуск тестов
 
-'python3 tests.py'
+`python3 tests.p`
 
 # Команды
 
