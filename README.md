@@ -32,7 +32,7 @@ tar. Эмулятор должен работать в режиме CLI.
 
 Перед запуском необходимо клонировать репозиторий в среду разработки:
 
-'git clone https://github.com/Lizok256/konf1hw'
+`git clone https://github.com/Lizok256/konf1hw`
 
 Запуск emulator.py:
 
