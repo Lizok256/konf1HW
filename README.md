@@ -31,15 +31,16 @@ tar. Эмулятор должен работать в режиме CLI.
 # Запуск
 
 Перед запуском необходимо клонировать репозиторий в среду разработки:
-[git clone https://github.com/Lizok256/konf1hw]
+
+'git clone https://github.com/Lizok256/konf1hw'
 
 Запуск emulator.py:
 
-python3 emulator.py
+'python3 emulator.py'
 
 Запуск тестов
 
-python3 tests.py
+'python3 tests.py'
 
 # Команды
 
