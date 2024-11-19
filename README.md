@@ -58,6 +58,9 @@ clear - Очистка экрана терминала
 
 # Тесты
 ls 
+![LS](images/ls.png)
+
+
 cd
 exit 
 rmdir 
