@@ -63,10 +63,19 @@ ls
 
 
 cd
-exit 
+
+![](images/cd.png)
+
+
 rmdir 
+
+![](images/rmdir.png)
+
 du 
-clear 
 
-Общие тесты через pytest
+![](images/du.png)
 
+
+# Общие тесты через pytest
+
+![](images/tests.png)
