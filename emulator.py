@@ -2,7 +2,7 @@ import  os
 import shutil
 import tarfile
 import configparser
-import xml.etree.ElementTree as ET
+#import xml.etree.ElementTree as ET
 from commands import CommandHandler
 
 from logger import Logger
@@ -84,6 +84,7 @@ class Emulator:
         except:
             print('Cant not chdir to tmp')
             return
+
         try:
             shutil.rmtree('./35153')
         except:
