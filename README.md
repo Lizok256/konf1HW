@@ -76,6 +76,6 @@ du
 ![](images/du.png)
 
 
-# Общие тесты через pytest
+# Общие тесты через unittest
 
 ![](images/tests.png)
